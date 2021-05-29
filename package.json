@@ -1,0 +1,59 @@
+{
+  "name": "@axolo/egg-amap",
+  "version": "0.0.1",
+  "description": "AMap plugin for Egg.js.",
+  "eggPlugin": {
+    "name": "amap"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "amap",
+    "gaode",
+    "map"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "autod": "^3.1.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.29.4",
+    "egg-bin": "^4.16.2",
+    "egg-ci": "^1.18.0",
+    "egg-mock": "^4.1.0",
+    "eslint": "^7.27.0",
+    "eslint-config-egg": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "config",
+    "app.js",
+    "lib"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-amap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-amap#readme",
+  "author": "Yueming Fang",
+  "license": "MIT"
+}
