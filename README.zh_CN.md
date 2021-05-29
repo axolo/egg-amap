@@ -41,7 +41,7 @@ const Controller = require('egg').Controller;
 class AmapController extends Controller {
   async index() {
     const { app, ctx } = this;
-    const amap = app.amap.get('admin'); // axios实例
+    const amap = app.amap; // axios实例
     const { keywords } = ctx.request.query;
     // https://lbs.amap.com/api/webservice/guide/api/newpoisearch
     const result = await amap.get('/v5/place/text', { params: { keywords } });
