@@ -48,12 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-amap.git"
+    "url": "git+https://github.com/axolo/egg-amap.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/axolo/egg-amap/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-amap#readme",
+  "homepage": "https://github.com/axolo/egg-amap#readme",
   "author": "Yueming Fang",
   "license": "MIT"
 }
