@@ -3,9 +3,9 @@
 const axios = require('axios');
 
 const createCos = options => {
-  const { axios: userAxios, baseURL, key } = options;
-  const amap = userAxios || axios;
-  amap.defaults.baseURL = baseURL;
+  const { axios: http, baseURL, key } = options;
+  const amap = http || axios.create({ baseURL });
+  // amap.defaults.baseURL = baseURL;
   amap.defaults.headers.get.key = key;
   return amap;
 };

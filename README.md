@@ -22,8 +22,9 @@ exports.amap = {
 
 ```js
 // {app_root}/config/config.default.js
+const axios = require('axios');
 exports.amap = {
-  // axios: require('axios'),
+  // axios: axios.create({ baseURL: 'https://restapi.amap.com' }),
   key: 'AMAP-APP-KEY',
 };
 ```

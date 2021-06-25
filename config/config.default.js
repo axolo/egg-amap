@@ -10,7 +10,9 @@ const axios = require('axios');
  */
 exports.amap = {
   default: {
-    axios,
+    axios: axios.create({
+      baseURL: 'https://restapi.amap.com',
+    }),
     baseURL: 'https://restapi.amap.com',
   },
   // client: {
